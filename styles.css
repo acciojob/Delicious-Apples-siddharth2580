@@ -1,1 +1,154 @@
-/* your code here */
+body {
+    background-color: #2ecc71;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.product {
+    display: flex;
+    background: #ffffff;
+    width: 800px;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.product_photo, .product_info {
+    flex: 1;
+    padding: 30px;
+}
+
+.product_photo {
+    background: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-container {
+    position: relative;
+    width: 100%;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.photo-main {
+    text-align: center;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-main img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.photo-album ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.photo-album ul li {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    cursor: pointer;
+}
+
+.photo-album ul li img {
+    max-height: 40px;
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.title span {
+    font-size: 12px;
+    color: #95a5a6;
+}
+
+.price {
+    font-size: 28px;
+    color: #e74c3c;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.variant h3, .description h3 {
+    font-size: 12px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.variant ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.variant ul li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.variant ul li img {
+    width: 20px;
+}
+
+.description ul {
+    padding-left: 15px;
+    color: #555;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.cart-btn button {
+    width: 100%;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.cart-btn button:hover {
+    background-color: #c0392b;
+}
